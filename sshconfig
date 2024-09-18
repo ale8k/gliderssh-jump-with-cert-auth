@@ -1,0 +1,10 @@
+Host jumphost
+        HostName localhost
+        Port 2222
+        User ubuntu
+        IdentityFile ./jump_key
+        CertificateFile ./jump_key-cert.pub
+Host targethost
+        HostName 10.194.48.76
+        User ubuntu
+        IdentityFile ./test_key
